@@ -1,0 +1,1007 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(24, 23, 23);
+    width: 100%;
+}
+
+.navbar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(50, 49, 49);
+    border-bottom: 1px solid gray;
+}
+
+.navItem {
+    margin-right: auto;
+}
+
+.navItem ul {
+    display: flex;
+}
+
+.navItem ul li {
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.navItem ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navItem ul li:hover {
+    background-color: rgb(99, 99, 99);
+    border-radius: 5px;
+}
+
+.navbar h3 {
+    color: white;
+    margin-right: 20px;
+
+
+}
+
+.toggler {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: none;
+
+}
+
+.icons i {
+    color: white;
+    margin-right: 20px;
+}
+
+.icons i:hover {
+    color: rgb(99, 99, 99);
+}
+
+.sidebar {
+    height: 665px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(50, 49, 49);
+
+}
+
+.sidebar img:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+#img6 {
+    position: absolute;
+    margin-top: 530px;
+
+
+}
+
+#img7 {
+    position: absolute;
+    margin-top: 590px;
+
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(64, 119, 196);
+    line-height: 30px;
+    padding: 5px;
+    color: white;
+    top: 5px;
+
+
+
+}
+
+.bottom-bar div:nth-child(1) {
+    letter-spacing: 5px;
+}
+
+.bottom-bar div:nth-child(2) span {
+    margin-left: 5px;
+}
+
+.bottom-bar div:nth-child(3) span {
+    margin-right: 5px;
+}
+
+.dropDown-Content1 {
+    position: absolute;
+    left: 60px;
+    top: 35px;
+    width: 300px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+}
+
+.dropDown-Content1.Content1 {
+    display: block;
+}
+
+.dropDown-Content1 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content1 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content2 {
+    position: absolute;
+    left: 117px;
+    top: 35px;
+    width: 300px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+}
+
+.dropDown-Content2.Content2 {
+    display: block;
+}
+
+.dropDown-Content2 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content2 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content3 {
+    position: absolute;
+    left: 173px;
+    top: 35px;
+    width: 350px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+}
+
+.dropDown-Content3.Content3 {
+    display: block;
+}
+
+.dropDown-Content3 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content3 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content4 {
+    position: absolute;
+    left: 270px;
+    top: 35px;
+    width: 350px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+
+
+}
+
+.dropDown-Content4.Content4 {
+    display: block;
+}
+
+.dropDown-Content4 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content4 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content5 {
+    position: absolute;
+    left: 337px;
+    top: 35px;
+    width: 350px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+
+}
+
+.dropDown-Content5.Content5 {
+    display: block;
+}
+
+.dropDown-Content5 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content5 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content6 {
+    position: absolute;
+    left: 389px;
+    top: 35px;
+    width: 350px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+
+}
+
+.dropDown-Content6.Content6 {
+    display: block;
+}
+
+.dropDown-Content6 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content6 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content7 {
+    position: absolute;
+    left: 447px;
+    top: 35px;
+    width: 350px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+
+}
+
+.dropDown-Content7.Content7 {
+    display: block;
+}
+
+.dropDown-Content7 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content7 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+.dropDown-Content8 {
+    position: absolute;
+    left: 540px;
+    top: 35px;
+    width: 380px;
+
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+
+}
+
+.dropDown-Content8.Content8 {
+    display: block;
+}
+
+.dropDown-Content8 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.dropDown-Content8 div:hover {
+    background-color: rgb(5, 75, 133);
+    border-radius: 5px;
+
+}
+
+
+.explorer {
+    height: 665px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: rgb(183, 180, 180);
+    background-color: rgb(42, 41, 41);
+    display: none;
+
+}
+
+.explorer.show1 {
+    display: block;
+}
+
+.DrobDown-ContentBx1 {
+    position: absolute;
+    left: 220px;
+    top: 30px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+}
+
+.DrobDown-ContentBx1 div {
+    height: 30px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.DrobDown-ContentBx1 div:hover {
+    background-color: rgb(70, 169, 212);
+    border-radius: 5px;
+
+}
+
+#DrobDownBx1 {
+    padding: 5px;
+}
+
+#DrobDownBx1:hover {
+    background-color: rgb(75, 77, 77);
+    border-radius: 5px;
+}
+
+.Css-DropDownContent {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    color: rgb(255, 255, 255);
+    padding: 0px 5px;
+    display: none;
+    cursor: pointer;
+    width: 250px;
+    border-radius: 10px;
+    z-index: 10000;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(86, 84, 84);
+}
+
+.Css-DropDownContent li {
+
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+
+}
+
+.Css-DropDownContent li:hover {
+    border: 1px solid blue;
+}
+
+.bx1 {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+.bx1 span {
+    text-transform: uppercase;
+}
+
+.bx2 {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+
+}
+
+.bx2 span {
+    font-weight: bold;
+}
+
+.bx3 {
+    color: rgb(211, 211, 211);
+}
+
+.bx3 ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 5px 25px;
+
+}
+
+.bx3 ul li:hover {
+    background-color: rgb(61, 61, 69);
+
+}
+
+#codeicon {
+    color: orangered;
+}
+
+#jsicon {
+
+    background-color: black;
+    color: yellow;
+}
+
+#cssicon {
+    color: aqua;
+}
+
+
+.search {
+    height: 650px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    display: none;
+    color: rgb(183, 180, 180);
+    background-color: rgb(42, 41, 41);
+
+
+}
+
+.ex1 {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ex2 input {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+.ex2 span {
+    margin-left: 10px;
+
+}
+
+::placeholder {
+    color: white;
+
+}
+
+.search.show2 {
+    display: block;
+}
+
+
+
+.source {
+    height: 650px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    display: none;
+    padding: 20px 20px;
+    color: rgb(183, 180, 180);
+    background-color: rgb(42, 41, 41);
+
+}
+
+.source p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.source button {
+    padding: 20px 20px;
+    background-color: rgb(16, 114, 250);
+    color: white;
+    border-radius: 5px;
+}
+
+.source a {
+    text-decoration: none;
+    color: rgb(16, 114, 250);
+}
+
+.source.show3 {
+    display: block;
+}
+
+
+.run {
+    height: 650px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: rgb(183, 180, 180);
+    background-color: rgb(42, 41, 41);
+    padding: 20px;
+    display: none;
+
+
+}
+
+.run button {
+    padding: 10px 20px;
+    background-color: rgb(16, 114, 250);
+    border-radius: 5px;
+    margin: 20px 0px;
+    color: white;
+}
+
+.run p a {
+    text-decoration: none;
+    color: rgb(16, 114, 250);
+}
+
+.run1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.run.show4 {
+    display: block;
+}
+
+.run .run1 i {
+    padding: 5px;
+
+}
+
+.run .run1 i:hover {
+    background-color: rgb(65, 66, 66);
+    border-radius: 5px;
+}
+
+.extensions {
+    height: 650px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: rgb(42, 41, 41);
+    padding: 20px;
+    color: rgb(183, 180, 180);
+    text-align: start;
+    display: none;
+
+
+}
+
+.extensions.show5 {
+    display: block;
+}
+
+.extensions input {
+    padding: 5px 10px;
+    background-color: grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.extensions i {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+
+}
+
+.ex2 div {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.ex2 div:hover {
+    background-color: rgb(61, 61, 69);
+    border-radius: 5px;
+}
+
+.ex2 [class="fas fa-cog"] {
+    margin-right: 0px;
+}
+
+
+
+.main {
+    height: 650px;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+
+    width: auto;
+
+}
+
+.html {
+    height: 40px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid black;
+    background-color: rgb(50, 49, 49);
+
+}
+
+#times {
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#times:hover {
+    background-color: rgb(88, 88, 88);
+
+}
+
+.css {
+    height: 40px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid black;
+    background-color: rgb(50, 49, 49);
+}
+
+
+
+.javascript {
+    height: 40px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid black;
+    background-color: rgb(50, 49, 49);
+}
+
+
+.mainbar {
+    display: flex;
+
+}
+
+
+.numbar {
+    height: 625px;
+    width: 75px;
+    border-right: 1px solid gray;
+    padding: 5px;
+    background-color: rgb(30, 29, 29);
+
+}
+
+.numbar div {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#ihide:hover {
+    color: aliceblue;
+
+}
+
+#ihide {
+    visibility: hidden;
+}
+
+.numbar i {
+    color: gray;
+    visibility: hidden;
+}
+
+.numbar span {
+    color: gray;
+}
+
+.numbar div h2 {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+#red {
+    visibility: hidden;
+}
+
+.htmlpage {
+    height: 562px;
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    padding: 5px 5px 5px 0px;
+    width: 500px;
+    display: none;
+
+
+}
+
+.htmlpage div {
+    height: 20px;
+    width: 100%;
+
+}
+
+.htmlpage div:hover {
+    border: 1px solid gray;
+}
+
+.htmlpage div i {
+    color: gray;
+}
+
+.csspage {
+    height: 562px;
+
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    padding: 5px 5px 5px 0px;
+    color: white;
+    width: 270px;
+    display: none;
+
+}
+
+.csspage div {
+    padding: 5px 20px;
+
+}
+
+.javascriptpage {
+    height: 562px;
+    width: 450px;
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    color: white;
+    padding: 5px 0px;
+    display: none;
+
+}
+
+.javascriptpage div {
+
+   padding: 10px 5px;
+}
+
+#darkblue {
+    color: rgb(44, 130, 183);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lightblue {
+    color: rgb(106, 223, 255);
+}
+
+#brown {
+    color: rgb(224, 181, 134);
+}
+
+#vscode {
+    color: white;
+}
+
+#Yellow {
+    color: rgb(220, 220, 143);
+}
+
+@media (max-width:890px) {
+    .toggler {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .navItem {
+        position: absolute;
+        top: 40px;
+        left: 60px;
+        width: 250px;
+        z-index: 50000;
+        background-color: rgb(33, 33, 33);
+        border: 1px solid rgb(86, 84, 84);
+        border-radius: 10px;
+    }
+
+    .navItem ul {
+        display: none;
+
+        padding: 5px 0px;
+        border-radius: 5px;
+
+    }
+
+    .navItem ul.active {
+        display: block;
+
+    }
+
+    .navItem ul li {
+        margin-left: 0px;
+        padding-left: 30px;
+    }
+
+    .navItem ul li:hover {
+        background-color: rgb(5, 75, 133);
+        border-radius: 5px;
+    }
+
+    .dropDown-Content1,
+    .dropDown-Content2,
+    .dropDown-Content3,
+    .dropDown-Content4,
+    .dropDown-Content5,
+    .dropDown-Content6,
+    .dropDown-Content7,
+    .dropDown-Content8 {
+        left: 320px;
+    }
+
+    .html,
+    .css,
+    .javascript {
+        width: 120px;
+    }
+
+    .javascriptpage {
+        width: auto;
+    }
+
+    .htmlpage {
+        width: 450px;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+
+}
